@@ -281,8 +281,7 @@ namespace ConsoleApp1
             Console.WriteLine(six3 < six1 || six2 < six1 || six2 > six3);
 
 
-            // unary operators-> +,-,++,--,
-
+            #region unary operators-> +,-,++,--,
             int two = 10;
             Console.WriteLine(++two);   // pre increment-- sate sate valu barbe:11
             Console.WriteLine(two++);   // post increment-- one step por varbe11
@@ -291,6 +290,9 @@ namespace ConsoleApp1
             Console.WriteLine(two++);  //11
             Console.WriteLine(two--);  // 12
             Console.WriteLine(--two);  //10
+            #endregion
+
+            
 
 
         }
