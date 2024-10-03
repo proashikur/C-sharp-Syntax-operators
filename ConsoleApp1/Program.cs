@@ -7,6 +7,33 @@ using System.Xml.Linq;
 
 namespace ConsoleApp1
 {
+
+
+
+    class person
+    {
+        public string name;
+        public int age;
+
+        /*public void PrintData()
+        {
+            Console.WriteLine($"Name : {name}, Age :{age} ");
+        }*/
+
+
+
+        public void Setvalu( string n, int a) {
+            name = n; 
+            age = a;
+        }
+
+        public void PrintData()
+        {
+            Console.WriteLine($"Name : {name}, Age :{age} ");
+        }
+
+
+    }
     internal class Program
     {
         static void Main(string[] args)
@@ -36,15 +63,15 @@ namespace ConsoleApp1
             // Console.WriteLine(Convert.ToInt32(myDouble));  // convert double to int
             // Console.WriteLine(Convert.ToString(myBool));   // convert bool to string
 
-           // int time = 20;
-          //  if (time < 18)
-           {
-           //     Console.WriteLine("Good day.");
-            }
-          //  else
+            // int time = 20;
+            //  if (time < 18)
             {
-            //    Console.WriteLine("Good evening.");
-             }
+                //     Console.WriteLine("Good day.");
+            }
+            //  else
+            {
+                //    Console.WriteLine("Good evening.");
+            }
             /*int time = 22;
             if (time < 10)
             {
@@ -60,17 +87,17 @@ namespace ConsoleApp1
             }
             // Outputs "Good evening."  */
 
-           // int time = 20;
-           //if (time < 18)
+            // int time = 20;
+            //if (time < 18)
             {
-            //    Console.WriteLine("Good day.");
+                //    Console.WriteLine("Good day.");
             }
-          // else
+            // else
             {
                 //   Console.WriteLine("Good evening.");
             }
 
-            string fullName= "ashikur rahman";
+            string fullName = "ashikur rahman";
             int age = 30;
             double gpa = 4.00;
             bool isRagistered = true;
@@ -83,11 +110,11 @@ namespace ConsoleApp1
             bool available = true;
             int sold = 5;
 
-         
 
-        
 
-      Console.WriteLine(fullName);
+
+
+            Console.WriteLine(fullName);
             Console.WriteLine(age);
             Console.WriteLine(isRagistered);
             Console.WriteLine(bloodGroup);
@@ -127,17 +154,17 @@ namespace ConsoleApp1
 
             Console.WriteLine(nam);
 
-            int num1 = (int) nam;
+            int num1 = (int)nam;
             Console.WriteLine(num1);
 
             // implict / auto
-           // char->int->long->float->double
+            // char->int->long->float->double
 
             //int salary = 2547; 
-           // Console.WriteLine(salary);
+            // Console.WriteLine(salary);
 
-           // char salary2= (char) salary;
-           // Console.WriteLine(salary2);
+            // char salary2= (char) salary;
+            // Console.WriteLine(salary2);
 
             int beton = 2764;
             Console.WriteLine(Convert.ToString(beton));
@@ -155,11 +182,11 @@ namespace ConsoleApp1
             int ashik = 10;
             int num2 = 3;
             int num3 = ashik + num2;
-           
-             Console.WriteLine("Additions:" + num3);
-           Console.WriteLine(ashik * num2);
-           Console.WriteLine(ashik / num2);
-           Console.WriteLine(ashik % num2);
+
+            Console.WriteLine("Additions:" + num3);
+            Console.WriteLine(ashik * num2);
+            Console.WriteLine(ashik / num2);
+            Console.WriteLine(ashik % num2);
 
             int sub = ashik - num2;
 
@@ -180,14 +207,14 @@ namespace ConsoleApp1
             resulT = numBer1 + numBer2;
 
             Console.WriteLine($"{numBer1} + {numBer2} = {resulT} ");
-            Console.WriteLine("{0} + {1} = {2}", numBer1,numBer2,resulT);
+            Console.WriteLine("{0} + {1} = {2}", numBer1, numBer2, resulT);
 
             resulT = numBer1 - numBer2;
 
             Console.WriteLine($"{numBer1} - {numBer2} = {resulT} ");
             Console.WriteLine("{0} - {1} = {2}", numBer1, numBer2, resulT);
 
-            resulT= numBer1 * numBer2;
+            resulT = numBer1 * numBer2;
 
             Console.WriteLine($"{numBer1} * {numBer2} = {resulT} ");
             Console.WriteLine("{0} * {1} = {2}", numBer1, numBer2, resulT);
@@ -215,10 +242,10 @@ namespace ConsoleApp1
             double average;
 
             Console.Write("nuMber1 = ");
-            nuMber1 = Convert.ToInt32(Console.ReadLine()); 
+            nuMber1 = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("nuMber2 = ");
-             nuMber2 = Convert.ToInt32(Console.ReadLine());
+            nuMber2 = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("nuMber3 = ");
             nuMber3 = Convert.ToInt32(Console.ReadLine());
@@ -229,7 +256,7 @@ namespace ConsoleApp1
             Console.WriteLine($"sum = {sum}");
 
 
-            average =(double)sum / 3;
+            average = (double)sum / 3;
 
             Console.WriteLine($"average = {average.ToString("F2")}");
 
@@ -264,7 +291,7 @@ namespace ConsoleApp1
 
             #endregion
 
-            
+
 
 
             // logical operators
@@ -292,7 +319,59 @@ namespace ConsoleApp1
             Console.WriteLine(--two);  //10
             #endregion
 
-            
+            //condition statement 
+
+            int con = 30;
+            if (con > 0)
+            {
+                Console.WriteLine("positive Number");
+            }
+            else if (con < 0)
+            {
+                Console.WriteLine("negative numbers");
+            }
+            else if (con == 0)
+            {
+                Console.WriteLine("number zeroo");
+            }
+
+            //for loop
+
+            for (int count = 1; count < 100; count = count + 2)
+            {
+                Console.WriteLine($"{count} : Count The Number 1-100");
+            }
+
+            int i = 1;
+            while (i < 10)
+            {
+                Console.WriteLine(i);
+                i++;
+            }
+
+
+            /*int r = 100;
+            do
+            {
+                Console.WriteLine("r");
+                r++;
+            }
+            while (r < 10);
+        }*/
+
+            person p1 = new person();
+            p1.Setvalu("asik",30);
+            p1.PrintData();
+         
+
+
+            person p2 = new person();
+            p2.Setvalu("Tamimi", 34);
+            p2 .PrintData();
+
+
+
+
 
 
         }
